@@ -252,12 +252,12 @@ gulp.task('wp-pot', ['clean:pot'], function() {
 	.pipe(plumber({ errorHandler: handleErrors }))
 	.pipe(sort())
 	.pipe(wpPot({
-		domain: 'genesis-sample',
-		destFile:'genesis-sample.pot',
-		package: 'genesis-sample',
-		bugReport: 'http://genesis-sample.com',
-		lastTranslator: 'John Doe <mail@genesis-sample.com>',
-		team: 'Team <mail@genesis-sample.com>'
+		domain: 'mixup',
+		destFile:'mixup.pot',
+		package: 'mixup',
+		bugReport: 'https://thememix.com',
+		lastTranslator: 'Translator <translations@thememix.com>',
+		team: 'Translations Team <translations@thememix.com>'
 	}))
 	.pipe(gulp.dest('languages/'));
 });
