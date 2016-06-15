@@ -20,13 +20,15 @@
 	font-size: 3rem;
 	font-weight: 900;
 	line-height: 1.2;
-}
 
-.site-title a,
-.site-title a:hover,
-.site-title a:focus {
-	color: #333;
-	text-decoration: none;
+
+	a,
+	a:hover,
+	a:focus {
+		color: #333;
+		text-decoration: none;
+	}
+
 }
 
 .header-image .site-title > a {
