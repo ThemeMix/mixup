@@ -1,14 +1,18 @@
+/**
+ * Accessibility-ready responsive menu.
+ */
+
 ( function ( document, $, undefined ) {
 
 	$( 'body' ).addClass( 'js' );
 
 	'use strict';
 
-	var genesisSample              = {},
+	var MixUp              = {},
 		mainMenuButtonClass = 'menu-toggle',
 		subMenuButtonClass  = 'sub-menu-toggle';
 
-	genesisSample.init = function() {
+	MixUp.init = function() {
 		var toggleButtons = {
 			menu : $( '<button />', {
 				'class' : mainMenuButtonClass,
@@ -16,7 +20,7 @@
 				'aria-pressed' : false,
 				'role' : 'button'
 				} )
-				.append( genesisSample.params.mainMenu ),
+				.append( MixUp.params.mainMenu ),
 			submenu : $( '<button />', {
 				'class' : subMenuButtonClass,
 				'aria-expanded' : false,
@@ -25,7 +29,7 @@
 				} )
 				.append( $( '<span />', {
 					'class' : 'screen-reader-text',
-					text : genesisSample.params.subMenu
+					text : MixUp.params.subMenu
 				} ) )
 		};
 		if ($( '.nav-header' ).length > 0 ) {
@@ -37,9 +41,9 @@
 		$( '.' + mainMenuButtonClass ).each( _addClassID );
 		$( '.' + mainMenuButtonClass ).addClass('dashicons-before dashicons-menu');
 		$( '.' + subMenuButtonClass ).addClass('dashicons-before dashicons-arrow-down');
-		$( window ).on( 'resize.genesisSample', _doResize ).triggerHandler( 'resize.genesisSample' );
-		$( '.' + mainMenuButtonClass ).on( 'click.genesisSample-mainbutton', _mainmenuToggle );
-		$( '.' + subMenuButtonClass ).on( 'click.genesisSample-subbutton', _submenuToggle );
+		$( window ).on( 'resize.MixUp', _doResize ).triggerHandler( 'resize.MixUp' );
+		$( '.' + mainMenuButtonClass ).on( 'click.MixUp-mainbutton', _mainmenuToggle );
+		$( '.' + subMenuButtonClass ).on( 'click.MixUp-subbutton', _submenuToggle );
 	};
 
 	// add nav class and ID to related button
@@ -184,10 +188,10 @@
 		// run test on resize of the window
 		$( window ).resize( _combineMenus );
 
-		genesisSample.params = typeof genesisSampleL10n === 'undefined' ? '' : genesisSampleL10n;
+		MixUp.params = typeof MixUpL10n === 'undefined' ? '' : MixUpL10n;
 
-		if ( typeof genesisSample.params !== 'undefined' ) {
-			genesisSample.init();
+		if ( typeof MixUp.params !== 'undefined' ) {
+			MixUp.init();
 		}
 
 	});

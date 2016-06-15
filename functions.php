@@ -49,7 +49,7 @@ function mixup_enqueue_scripts_styles() {
 		'mainMenu' => __( 'Menu', 'mixup' ),
 		'subMenu'  => __( 'Menu', 'mixup' ),
 	);
-	wp_localize_script( 'mixup-responsive-menu', 'genesisSampleL10n', $output );
+	wp_localize_script( 'mixup-responsive-menu', 'MixUpL10n', $output );
 
 	//* Add compiled JS
 	wp_enqueue_script( 'mixup-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), CHILD_THEME_VERSION, true );
