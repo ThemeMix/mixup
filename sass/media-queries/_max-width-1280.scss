@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1280px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 960px;
+	}
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		width: 740px;
+	}
+
+	.content,
+	.site-header .widget-area {
+		width: 620px;
+	}
+
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,
+	.content-sidebar-sidebar .content {
+		width: 400px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.sidebar-primary,
+	.title-area {
+		width: 300px;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 30px;
+	}
+
+}
