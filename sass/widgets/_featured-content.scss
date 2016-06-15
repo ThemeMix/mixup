@@ -1,0 +1,18 @@
+/* ## Featured Content
+--------------------------------------------- */
+
+.featured-content .entry {
+	background: none;
+	margin-bottom: 20px;
+	padding: 0 0 24px;
+}
+
+.featured-content .entry:last-of-type {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.featured-content .entry-title {
+	font-size: 20px;
+	font-size: 2rem;
+}

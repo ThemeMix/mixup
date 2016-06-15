@@ -1,0 +1,90 @@
+/*
+	Theme Name: MixUp Theme
+	Theme URI: https://thememix.com/
+	Description: This is the Mixup theme created for the Genesis Framework.
+	Author: ThemeMix
+	Author URI: https://thememix.com/
+
+	Version: 1.0.0
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+	- Screen Reader Text
+- Structure and Layout
+	- Site Containers
+	- Column Widths and Positions
+	- Column Classes
+- Common Classes
+	- Avatar
+	- Genesis
+	- Search Form
+	- Titles
+	- WordPress
+- Widgets
+	- Featured Content
+- Plugins
+	- Genesis eNews Extended
+	- Jetpack
+- Skip Links
+- Site Header
+	- Title Area
+	- Widget Area
+- Site Navigation
+	- Accessible Menu
+	- Site Header Navigation
+	- After Header Navigation
+	- Footer Navigation
+- Content Area
+	- Entries
+	- Entry Meta
+	- Pagination
+	- Comments
+- Sidebars
+- Footer Widgets
+- Site Footer
+- Media Queries
+	- Retina Display
+	- Max-width: 1280px
+	- Max-width: 1023px
+	- Max-width: 880px
+- Print Styles
+*/
+
+@import "utilities/variables/index";
+@import "bourbon";
+@import "utilities/functions/index";
+@import "utilities/mixins/index";
+
+@import "reset/index";
+@import "defaults/index";
+@import "structure-layout/index";
+@import "common-classes/index";
+@import "widgets/index";
+@import "plugins/index";
+@import "skip-links/index";
+@import "site-header/index";
+@import "site-navigation/index";
+@import "content-area/index";
+@import "sidebars/index";
+@import "footer-widgets/index";
+@import "site-footer/index";
+@import "media-queries/index";

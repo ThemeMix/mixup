@@ -1,0 +1,49 @@
+@media only screen and (max-width: 880px) {
+
+	body {
+		background-color: #fff;
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+	.site-inner,
+	.wrap {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.archive-description,
+	.author-box,
+	.comment-respond,
+	.entry,
+	.entry-comments,
+	.entry-pings,
+	.sidebar .widget,
+	.site-header {
+		padding: 0;
+	}
+
+	.archive-pagination li a {
+		margin-bottom: 4px;
+	}
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+
+	.sidebar .widget.enews-widget {
+		padding: 40px;
+	}
+
+}
