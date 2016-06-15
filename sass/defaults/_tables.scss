@@ -7,10 +7,11 @@ table {
 	line-height: 2;
 	margin-bottom: 40px;
 	width: 100%;
+	word-break: break-word;
 }
 
 tbody {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #eee;
 }
 
 td,
@@ -19,10 +20,16 @@ th {
 }
 
 td {
-	border-top: 1px solid #ddd;
-	padding: 6px 0;
+	border-top: 1px solid #eee;
+	padding: 6px;
 }
 
 th {
 	font-weight: 400;
+	padding: 0 6px;
+}
+
+td:first-child,
+th:first-child {
+	padding-left: 0;
 }
