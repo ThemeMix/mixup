@@ -25,6 +25,8 @@ var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
 var uglify = require('gulp-uglify');
 var wpPot = require('gulp-wp-pot');
+var stylelint = require('stylelint');
+var configWordPress = require("stylelint-config-wordpress")
 
 // Set assets paths.
 var paths = {
@@ -95,7 +97,9 @@ gulp.task('postcss', ['clean:styles'], function() {
 			mqpacker({
 				sort: true
 			}),
+			stylelint(configWordPress) // use stylelint-config-wordpress
 		]))
+
 
 	// Create sourcemap.
 	.pipe(sourcemaps.write())
