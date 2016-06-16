@@ -16,7 +16,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'MixUp' );
 define( 'CHILD_THEME_URL', 'https://thememix.com/mixup/' );
-define( 'CHILD_THEME_VERSION', '0.7.3' );
+define( 'CHILD_THEME_VERSION', '0.7.5' );
 
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
