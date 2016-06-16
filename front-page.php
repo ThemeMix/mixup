@@ -13,8 +13,10 @@
 //* Force full-width-content layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
-//* No need to output the title for the frontpage
-remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+if ( ! is_home() ) {
+	//* No need to output the title for the frontpage
+	remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+}
 
 add_filter( 'genesis_site_title_wrap', 'mixup_h1_for_site_title' );
 /**
