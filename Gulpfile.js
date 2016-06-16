@@ -25,6 +25,8 @@ var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
 var uglify = require('gulp-uglify');
 var wpPot = require('gulp-wp-pot');
+var stylelint = require('stylelint');
+var configWordPress = require("stylelint-config-wordpress")
 
 // Set assets paths.
 var paths = {
@@ -95,6 +97,7 @@ gulp.task('postcss', ['clean:styles'], function() {
 			mqpacker({
 				sort: true
 			}),
+			stylelint(configWordPress) // use stylelint-config-wordpress
 		]))
 
 	// Create sourcemap.
@@ -239,7 +242,7 @@ gulp.task('uglify', ['concat'], function() {
  * Delete the theme's .pot before we create a new one
  */
 gulp.task('clean:pot', function() {
-	return del(['languages/genesis-sample.pot']);
+	return del(['languages/mixup.pot']);
 });
 
 /**
@@ -252,12 +255,12 @@ gulp.task('wp-pot', ['clean:pot'], function() {
 	.pipe(plumber({ errorHandler: handleErrors }))
 	.pipe(sort())
 	.pipe(wpPot({
-		domain: 'genesis-sample',
-		destFile:'genesis-sample.pot',
-		package: 'genesis-sample',
-		bugReport: 'http://genesis-sample.com',
-		lastTranslator: 'John Doe <mail@genesis-sample.com>',
-		team: 'Team <mail@genesis-sample.com>'
+		domain: 'mixup',
+		destFile:'mixup.pot',
+		package: 'mixup',
+		bugReport: 'https://thememix.com',
+		lastTranslator: 'Translator <translations@thememix.com>',
+		team: 'Translations Team <translations@thememix.com>'
 	}))
 	.pipe(gulp.dest('languages/'));
 });
@@ -273,7 +276,7 @@ gulp.task('watch', function() {
 	browserSync({
 		open: false,                  // Open project in a new tab?
 		injectChanges: true,          // Auto inject changes instead of full reload
-		proxy: "genesis-sample.dev",  // Use http://genesis-sample.dev:3000 to use BrowserSync
+		proxy: "mixup.dev",  // Use http://mixup.dev:3000 to use BrowserSync
 		watchOptions: {
 			debounceDelay: 1000       // Wait 1 second before injecting
 		}

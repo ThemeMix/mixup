@@ -3,6 +3,18 @@
 
 .gallery {
 	overflow: hidden;
+
+	img {
+		border: 1px solid #eee;
+		height: auto;
+		padding: 4px;
+	}
+
+	img:hover,
+	img:focus {
+		border: 1px solid #999;
+	}
+
 }
 
 .gallery-item {
@@ -56,15 +68,4 @@
 .gallery-columns-8 .gallery-item:nth-child(8n+1),
 .gallery-columns-9 .gallery-item:nth-child(9n+1) {
 	clear: left;
-}
-
-.gallery img {
-	border: 1px solid #eee;
-	height: auto;
-	padding: 4px;
-}
-
-.gallery img:hover,
-.gallery img:focus {
-	border: 1px solid #999;
 }
