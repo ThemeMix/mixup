@@ -100,7 +100,6 @@ gulp.task('postcss', ['clean:styles'], function() {
 			stylelint(configWordPress) // use stylelint-config-wordpress
 		]))
 
-
 	// Create sourcemap.
 	.pipe(sourcemaps.write())
 
