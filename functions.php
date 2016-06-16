@@ -43,13 +43,6 @@ function mixup_enqueue_scripts_styles() {
 	// Load Font Awesome, always the latest version
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
 
-	//* Remove default stylesheet
-	//wp_deregister_style( 'mixup-theme' );
-
-	//* Add compiled stylesheet
-	//wp_register_style( 'mixup-theme', get_stylesheet_directory_uri() . '/style.css', array(), CHILD_THEME_VERSION );
-	//wp_enqueue_style( 'mixup-theme' );
-
 	wp_enqueue_script( 'mixup-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
 	$output = array(
 		'mainMenu' => __( 'Menu', 'mixup' ),
