@@ -1,8 +1,9 @@
 <?php
+
 /**
  * MixUp.
  *
- * This file adds the Customizer additions to the MixUp Theme.
+ * This file adds the Customizer Default Settings to the MixUp Theme.
  *
  * @package MixUp
  * @author  ThemeMix
@@ -10,45 +11,16 @@
  * @link    https://thememix.com/
  */
 
-/**
- * Get default link color for Customizer.
- *
- * Abstracted here since at least two functions use it.
- *
- * @since 1.0.0
- *
- * @return string Hex color code for link color.
- */
-function mixup_customizer_get_default_link_color() {
-	return '#c3251d';
-}
-
-/**
- * Get default accent color for Customizer.
- *
- * Abstracted here since at least two functions use it.
- *
- * @since 1.0.0
- *
- * @return string Hex color code for accent color.
- */
-
-function mixup_customizer_get_default_accent_color() {
-	return '#c3251d';
-}
-
 add_action( 'customize_register', 'mixup_customizer_register' );
 /**
  * Register settings and controls with the Customizer.
  *
- * @since 1.0.0
+ * @since 2.2.3
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
 function mixup_customizer_register() {
-
 	global $wp_customize;
-
 	$wp_customize->add_setting(
 		'mixup_link_color',
 		array(
@@ -56,7 +28,6 @@ function mixup_customizer_register() {
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
-
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
@@ -69,7 +40,6 @@ function mixup_customizer_register() {
 			)
 		)
 	);
-
 	$wp_customize->add_setting(
 		'mixup_accent_color',
 		array(
@@ -77,7 +47,6 @@ function mixup_customizer_register() {
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
-
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
@@ -90,5 +59,10 @@ function mixup_customizer_register() {
 			)
 		)
 	);
-
 }
+
+//* Including Customizer Frontpage Sections
+include 'sections/customizer-frontpage-sections.php';
+
+//* Including Customizer Footer Sections
+include 'sections/customizer-footer-sections.php';

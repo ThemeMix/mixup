@@ -242,7 +242,7 @@ gulp.task('uglify', ['concat'], function() {
  * Delete the theme's .pot before we create a new one
  */
 gulp.task('clean:pot', function() {
-	return del(['languages/genesis-sample.pot']);
+	return del(['languages/mixup.pot']);
 });
 
 /**
@@ -276,7 +276,7 @@ gulp.task('watch', function() {
 	browserSync({
 		open: false,                  // Open project in a new tab?
 		injectChanges: true,          // Auto inject changes instead of full reload
-		proxy: "genesis-sample.dev",  // Use http://genesis-sample.dev:3000 to use BrowserSync
+		proxy: "mixup.dev",  // Use http://mixup.dev:3000 to use BrowserSync
 		watchOptions: {
 			debounceDelay: 1000       // Wait 1 second before injecting
 		}
