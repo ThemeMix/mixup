@@ -5,23 +5,23 @@
 	margin-bottom: 40px;
 	word-wrap: break-word;
 
+	ul {
+		list-style: none;
+	    padding-left: 13px;
+	    position: relative;
+		}
+
 	ul > li {
 		margin-bottom: 10px;
 		padding-bottom: 10px;
-		display: block;
-    overflow: hidden;
-    position: relative;
-    padding: 10px 0 0 5px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 	}
 
 	li::before {
-	position: relative;
-    left: -5px;
-    font-family: FontAwesome;
-    font-size: 14px;
-    content: "\f105";
+		position: absolute;
+	    left: 0;
+	    font-family: FontAwesome;
+	    font-size: 14px;
+	    content: "\f105";
 	}
 
 	ul > li:last-of-type {

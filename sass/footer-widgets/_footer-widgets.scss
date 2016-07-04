@@ -7,6 +7,16 @@
 	color: #fff;
 	padding: 60px 0;
 
+	.wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.widget-area {
+		flex: 1 100%;
+		padding: 0 40px 0 0;
+	}
+
 	.widget-title {
 		color: #fff;
 		text-transform: uppercase;
@@ -21,33 +31,5 @@
 	li {
 		border-bottom: 1px dashed $color-mine-shaft;
 	}
+
 }
-
-.footer-widgets .wrap {
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-widgets .widget-area {
-	flex: 1 100%;
-	padding: 0 40px 0 0;
-}
-
-// .footer-widgets-1,
-// .footer-widgets-2,
-// .footer-widgets-3 {
-// 	width: 340px;
-// }
-
-// .footer-widgets-1 {
-// 	margin-right: 60px;
-// }
-
-// .footer-widgets-1,
-// .footer-widgets-2 {
-// 	float: left;
-// }
-
-// .footer-widgets-3 {
-// 	float: right;
-// }
