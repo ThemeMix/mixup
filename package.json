@@ -31,7 +31,10 @@
     "gulp-wp-pot": "^1.1.1",
     "gulp.spritesmith": "^6.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-stylelint": "^2.0.2",
+    "stylelint-config-wordpress": "^8.0.0"
+  },
   "scripts": {
     "test": "echo \"No test specified\""
   },
