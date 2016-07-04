@@ -37,8 +37,7 @@ add_action( 'wp_enqueue_scripts', 'mixup_enqueue_scripts_styles' );
  */
 function mixup_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'mixup-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700,900', array(), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'mixup-googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Source+Sans+Pro:300,300i,400,400i,700,700i&subset=latin-ext', array(), CHILD_THEME_VERSION );
 
 	// Load Font Awesome, always the latest version
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );

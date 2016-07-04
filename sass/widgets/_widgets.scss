@@ -8,6 +8,20 @@
 	ul > li {
 		margin-bottom: 10px;
 		padding-bottom: 10px;
+		display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0 0 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	}
+
+	li::before {
+	position: relative;
+    left: -5px;
+    font-family: FontAwesome;
+    font-size: 14px;
+    content: "\f105";
 	}
 
 	ul > li:last-of-type {
