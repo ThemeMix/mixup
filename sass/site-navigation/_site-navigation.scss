@@ -17,7 +17,8 @@
 		color: #333;
 		text-decoration: none;
 		display: block;
-		padding: 32px 20px;
+		padding: 20px 20px;
+		text-transform: uppercase;
 	}
 
 	a:hover,
@@ -25,8 +26,7 @@
 	.current-menu-item > a,
 	.sub-menu .current-menu-item > a:hover,
 	.sub-menu .current-menu-item > a:focus  {
-		color: #cc3d25;
-		text-decoration: underline;
+		color: $color-link;;
 	}
 
 	.sub-menu {

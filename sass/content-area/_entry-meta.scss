@@ -2,9 +2,11 @@
 --------------------------------------------- */
 
 p.entry-meta {
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
 	margin-bottom: 0;
+	color: $color-dove-gray;
 }
 
 .entry-header .entry-meta {
