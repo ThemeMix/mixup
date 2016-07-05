@@ -11,7 +11,7 @@
  */
 
 //* Remove the header right widget area
-unregister_sidebar( 'header-right' );
+//unregister_sidebar( 'header-right' );
 //* Unregister secondary sidebar
 unregister_sidebar( 'sidebar-alt' );
 //* Unregister sidebar/sidebar/content layout setting
