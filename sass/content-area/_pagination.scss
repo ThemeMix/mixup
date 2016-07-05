@@ -33,3 +33,24 @@
 	background-color: $color-link;
 	color: #fff;
 }
+
+.entry-pagination {
+	font-size: 14px;
+	font-size: 1.4rem;
+
+	a {
+		background-color: $color-link;
+		color: #fff;
+		font-size: 14px;
+		font-size: 1.4rem;
+		padding: 4px 6px;
+		border-bottom: 1px solid $color-link;
+		border-radius: 2px;
+	}
+
+	a:hover {
+		color: #000;
+		background-color: #fff;
+		border-bottom: 1px solid $color-link;
+	}
+}
