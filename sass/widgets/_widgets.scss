@@ -44,6 +44,10 @@
 
 }
 
+.site-header .widget li:before {
+	content: '';
+}
+
 .widget p:last-child,
 .widget ul > li:last-of-type,
 .widget-area .widget:last-of-type {
