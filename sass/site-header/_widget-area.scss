@@ -1,8 +1,16 @@
 /* ## Widget Area
 --------------------------------------------- */
 
-.site-header .widget-area {
+.site-header {
+
+	.widget-area {
 	float: right;
 	text-align: right;
 	width: 800px;
+	}
+
+	.widget:last-of-type {
+		margin-bottom: 0;
+	}
+	
 }
