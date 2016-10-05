@@ -1,10 +1,10 @@
 <?php
 /**
- * Coach Pro.
+ * MixUp.
  *
- * This file adds the Customizer Default Settings to the Coach Pro Theme.
+ * This file adds the Customizer Default Settings to the MixUp Theme.
  *
- * @package Coach Pro
+ * @package MixUp
  * @author  ThemeMix
  * @license GPL-2.0+
  * @link    https://thememix.com/
@@ -24,7 +24,7 @@ function mixup_customizer_frontpage_settings() {
 
 	// Add Section
 	$wp_customize->add_section(
-		'coach_frontpage_options',
+		'mixup_frontpage_options',
 		array (
 			'title'         => __( 'Frontpage Setup', 'mixup' ),
 			'priority'      => 110,

@@ -19,12 +19,12 @@
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #cc3d25;
+	color: $color-link;
 }
 
 .widget-title {
-	font-size: 18px;
-	font-size: 1.8rem;
-	font-weight: 700;
+	font-size: 22px;
+	font-size: 2.2rem;
+	font-weight: 300;
 	margin-bottom: 20px;
 }

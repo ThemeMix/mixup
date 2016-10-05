@@ -10,7 +10,19 @@
 	text-align: center;
 
 	p {
-	margin-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.footer-left {
+		float: left;
+		width: 50%;
+		text-align: left;
+	}
+
+	.footer-right {
+		float: right;
+		width: 50%;
+		text-align: right;
 	}
 
 }

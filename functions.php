@@ -16,7 +16,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'MixUp' );
 define( 'CHILD_THEME_URL', 'https://thememix.com/mixup/' );
-define( 'CHILD_THEME_VERSION', '0.7.5' );
+define( 'CHILD_THEME_VERSION', '0.7.6' );
 
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
@@ -37,18 +37,12 @@ add_action( 'wp_enqueue_scripts', 'mixup_enqueue_scripts_styles' );
  */
 function mixup_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'mixup-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700,900', array(), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'mixup-googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Source+Sans+Pro:300,300i,400,400i,700,700i&subset=latin-ext', array(), CHILD_THEME_VERSION );
 
 	// Load Font Awesome, always the latest version
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
 
-	//* Remove default stylesheet
-	//wp_deregister_style( 'mixup-theme' );
-
-	//* Add compiled stylesheet
-	//wp_register_style( 'mixup-theme', get_stylesheet_directory_uri() . '/style.css', array(), CHILD_THEME_VERSION );
-	//wp_enqueue_style( 'mixup-theme' );
+	wp_enqueue_style( 'dashicons' );
 
 	wp_enqueue_script( 'mixup-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
 	$output = array(
@@ -58,7 +52,7 @@ function mixup_enqueue_scripts_styles() {
 	wp_localize_script( 'mixup-responsive-menu', 'MixUpL10n', $output );
 
 	//* Add compiled JS
-	wp_enqueue_script( 'mixup-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), CHILD_THEME_VERSION, true );
+	//wp_enqueue_script( 'mixup-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), CHILD_THEME_VERSION, true );
 
 }
 

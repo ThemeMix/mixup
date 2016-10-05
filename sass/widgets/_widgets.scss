@@ -5,9 +5,24 @@
 	margin-bottom: 40px;
 	word-wrap: break-word;
 
+	ul {
+		list-style: none;
+	    padding-left: 13px;
+	    position: relative;
+		}
+
 	ul > li {
 		margin-bottom: 10px;
 		padding-bottom: 10px;
+	}
+
+	li::before {
+		position: absolute;
+	    left: 0;
+	    font-family: FontAwesome;
+	    font-size: 14px;
+	    content: "\f105";
+	    margin-top: 1px;
 	}
 
 	ul > li:last-of-type {
@@ -29,10 +44,14 @@
 
 }
 
+.site-header .widget li:before {
+	content: '';
+}
+
 .widget p:last-child,
 .widget ul > li:last-of-type,
 .widget-area .widget:last-of-type {
-	margin-bottom: 0;
+	margin-bottom: 40px;
 }
 
 .widget_calendar table {

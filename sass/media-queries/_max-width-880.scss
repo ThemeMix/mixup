@@ -46,4 +46,11 @@
 		padding: 40px;
 	}
 
+	.footer-widgets {
+
+		.wrap {
+			display:flex;
+    		flex-direction:column;
+		}
+	}
 }

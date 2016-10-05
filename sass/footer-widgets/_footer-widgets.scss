@@ -2,26 +2,34 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #fff;
+	background-color: #424242;
 	clear: both;
-	padding: 40px 0;
-}
+	color: #fff;
+	padding: 60px 0;
 
-.footer-widgets-1,
-.footer-widgets-2,
-.footer-widgets-3 {
-	width: 340px;
-}
+	.wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.widget-area {
+		flex: 1 100%;
+		padding: 0 40px 0 0;
+	}
 
-.footer-widgets-1 {
-	margin-right: 60px;
-}
+	.widget-title {
+		color: #fff;
+		text-transform: uppercase;
+	}
 
-.footer-widgets-1,
-.footer-widgets-2 {
-	float: left;
-}
+	a:hover,
+	a:focus {
+		color: #fff;
+		text-decoration: underline;
+	}
 
-.footer-widgets-3 {
-	float: right;
+	li {
+		border-bottom: 1px dashed $color-mine-shaft;
+	}
+
 }

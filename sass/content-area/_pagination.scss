@@ -12,6 +12,7 @@
 
 .archive-pagination li {
 	display: inline;
+	margin-right: 5px;
 }
 
 .archive-pagination li a {
@@ -21,7 +22,7 @@
 	display: inline-block;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 700;
+	font-weight: 400;
 	padding: 8px 12px;
 	text-decoration: none;
 }
@@ -29,6 +30,27 @@
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-	background-color: #cc3d25;
+	background-color: $color-link;
 	color: #fff;
+}
+
+.entry-pagination {
+	font-size: 14px;
+	font-size: 1.4rem;
+
+	a {
+		background-color: $color-link;
+		color: #fff;
+		font-size: 14px;
+		font-size: 1.4rem;
+		padding: 4px 6px;
+		border-bottom: 1px solid $color-link;
+		border-radius: 2px;
+	}
+
+	a:hover {
+		color: #000;
+		background-color: #fff;
+		border-bottom: 1px solid $color-link;
+	}
 }
