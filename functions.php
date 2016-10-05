@@ -40,7 +40,7 @@ function mixup_enqueue_scripts_styles() {
 	wp_enqueue_style( 'mixup-googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Source+Sans+Pro:300,300i,400,400i,700,700i&subset=latin-ext', array(), CHILD_THEME_VERSION );
 
 	// Load Font Awesome, always the latest version
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_style( 'dashicons' );
 
@@ -52,7 +52,7 @@ function mixup_enqueue_scripts_styles() {
 	wp_localize_script( 'mixup-responsive-menu', 'MixUpL10n', $output );
 
 	//* Add compiled JS
-	wp_enqueue_script( 'mixup-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), CHILD_THEME_VERSION, true );
+	//wp_enqueue_script( 'mixup-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), CHILD_THEME_VERSION, true );
 
 }
 
