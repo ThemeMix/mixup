@@ -45,7 +45,7 @@ function mixup_customizer_footer_settings() {
 		'footer_left_text',
 		array(
 			'label'    => __( 'Footer Left Text', 'mixup' ),
-			'section'  => 'coach_footer',
+			'section'  => 'mixup_footer',
 			'settings' => 'footer_left_text',
 			'type'     => 'textarea',
 		)
@@ -64,7 +64,7 @@ function mixup_customizer_footer_settings() {
 		'footer_right_text',
 		array(
 			'label'    => __( 'Footer Right Text', 'mixup' ),
-			'section'  => 'coach_footer',
+			'section'  => 'mixup_footer',
 			'settings' => 'footer_right_text',
 			'description' => __( 'Feel free to use HTML and shortcodes here.', 'mixup' ),
 			'type'     => 'textarea',
