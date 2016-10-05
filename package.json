@@ -1,6 +1,6 @@
 {
   "name": "mixup",
-  "version": "0.7.3",
+  "version": "0.7.6",
   "description": "MixUp Genesis theme with modern build tools.",
   "main": "Gulpfile.js",
   "dependencies": {
