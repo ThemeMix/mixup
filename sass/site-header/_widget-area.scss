@@ -12,5 +12,9 @@
 	.widget:last-of-type {
 		margin-bottom: 0;
 	}
+
+	.widget ul > li:last-of-type {
+		margin-bottom: 0;
+	}
 	
 }
