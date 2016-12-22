@@ -40,6 +40,7 @@ var paths = {
     sass: 'sass/**/*.scss',
     sass_path: 'sass/',
     temp_path: 'temp/',
+    temp_min_path: 'temp/min/',
     concat_scripts: 'js/concat/*.js',
     scripts: ['js/*.js', '!js/*.min.js', '!js/responsive-menu.js'],
     sprites: 'images/sprites/*.png'
@@ -206,7 +207,7 @@ gulp.task('compilecss:sassfilestoparseandminify', function() {
  *
  * https://www.npmjs.com/package/gulp-sass
  */
-gulp.task(' ', function() {
+gulp.task('compilecss:style', function() {
     return gulp.src('sass/style.scss', paths.css)
 
     // Deal with errors.
@@ -297,10 +298,25 @@ gulp.task('cssnano', function() {
             },
             safe: true // Use safe optimizations
         }))
-        .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest(paths.temp_min_path))
         .pipe(browserSync.stream());
 });
+
+
+/**
+ * Minify and optimize style.css.
+ *
+ * https://www.npmjs.com/package/gulp-cssnano
+ */
+gulp.task('cssminify', function() {
+    // return gulp.src(['temp/style.css', 'temp/normalize.css', 'temp/fontawesome.css', 'temp/main.css'])
+    return gulp.src([paths.temp_path + 'style.css', paths.temp_min_path  + 'style.css'])
+        .pipe(concat('style.css'))
+        .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('./'));
+});
+
+
 
 /**
  * Sass linting
@@ -456,6 +472,6 @@ gulp.task('watch', function() {
 gulp.task('i18n', ['wp-pot']);
 gulp.task('icons', ['svg']);
 gulp.task('scripts', ['uglify']);
-gulp.task('styles', runSequence('clean:style', 'compilecss:sassfilestoparseandminify', 'compilecss:style', 'compilecss:main', 'cssconcat', 'cssnano', 'clean:temp'));
+gulp.task('styles', runSequence('clean:style', 'compilecss:sassfilestoparseandminify', 'compilecss:style', 'compilecss:main', 'cssconcat', 'cssnano', 'cssminify', 'clean:temp'));
 gulp.task('sprites', ['imagemin', 'spritesmith']);
 gulp.task('default', ['i18n','icons', 'styles', 'scripts', 'sprites']);
