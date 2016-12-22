@@ -14,7 +14,9 @@
     "gulp": "^3.9.1",
     "gulp-cheerio": "^0.6.2",
     "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.8",
     "gulp-cssnano": "^2.1.0",
+    "gulp-debug": "^3.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
@@ -29,9 +31,12 @@
     "gulp-uglify": "^1.5.2",
     "gulp-util": "^3.0.7",
     "gulp-wp-pot": "^1.1.1",
-    "gulp.spritesmith": "^6.2.0"
+    "gulp.spritesmith": "^6.2.0",
+    "postcss-discard-comments": "^2.0.4",
+    "run-sequence": "^1.2.2"
   },
   "devDependencies": {
+    "gulp-sequence": "^0.4.6",
     "gulp-stylelint": "^2.0.2",
     "stylelint-config-wordpress": "^8.0.0"
   },
