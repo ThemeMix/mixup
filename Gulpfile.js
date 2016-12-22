@@ -47,6 +47,7 @@ var paths = {
 
 // Sass Files to be treated as Parse and Minify (keep comments)
 var sassFilesToParseAndMinify = [
+    'vendors/normalize'
 ]
 
 
@@ -205,7 +206,7 @@ gulp.task('compilecss:sassfilestoparseandminify', function() {
  *
  * https://www.npmjs.com/package/gulp-sass
  */
-gulp.task('compilecss:style', function() {
+gulp.task(' ', function() {
     return gulp.src('sass/style.scss', paths.css)
 
     // Deal with errors.

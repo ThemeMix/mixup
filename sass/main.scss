@@ -3,9 +3,9 @@
 @import "utilities/functions/index";
 @import "utilities/mixins/index";
 
-//@import "reset/index";
-//@import "defaults/index";
-//@import "structure-layout/index";
+@import "reset/index";
+@import "defaults/index";
+@import "structure-layout/index";
 @import "common-classes/index";
 @import "widgets/index";
 @import "plugins/index";
@@ -14,6 +14,6 @@
 @import "site-navigation/index";
 @import "content-area/index";
 @import "sidebars/index";
-//@import "footer-widgets/index";
-//@import "site-footer/index";
+@import "footer-widgets/index";
+@import "site-footer/index";
 @import "media-queries/index";
